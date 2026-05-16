@@ -13,6 +13,6 @@ function mask = isolateColor(picture, hMin, hMax, sMin, sMax, vMin, vMax)
               (S >= sMin & S <= sMax) & ...
               (V >= vMin & V <= vMax);
 
-    mask = imopen(mask, strel('disk', 2));
-    mask = imclose(mask, strel('disk', 3));
+    %mask = imopen(mask, strel('disk', 4));
+    mask = imclose(mask, strel('disk', 1));
 end

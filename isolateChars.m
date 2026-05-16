@@ -1,5 +1,5 @@
 function blobs = isolateChars(mask)
-    mask = imerode(mask, strel('disk', 2));
+  
 
     props = regionprops(mask, 'BoundingBox', 'Area', 'Image');
 
@@ -72,5 +72,4 @@ function blobs = isolateChars(mask)
         blobs = [blobs(1:3), blobs(end-2:end)];
     end
 
-    fprintf('Isolated chars: %d\n', length(blobs));
 end
