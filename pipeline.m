@@ -1,5 +1,5 @@
-[pictures, expectedPlates] = loadPictures('matricules'); 
-
+%[pictures, expectedPlates] = loadPictures('matricules'); 
+[pictures, expectedPlates] = loadCamera(1);
 % Threshold values obtained by trying with app (color thresholder)
 hMin = 0.480; hMax = 0.570;
 sMin = 0.440; sMax = 1.000;
